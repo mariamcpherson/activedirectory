@@ -175,11 +175,52 @@ In this step we will create a couple of Organizational Units inside our Active D
 <br />
 
 <p>
-First, we'll type Active Directory Users and Computers in the Start Menu of our Domain Controller VM. There, right-click on the domain name, in my case it's mydomain.com, then New
+First, we'll type Active Directory Users and Computers in the Start Menu of our Domain Controller VM. There, right-click on the domain name, in my case it's mydomain.com, then New → Organizational Unit. 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+This is a way to create categories or groups of users within the organization for which an Active Directory has been created. This allows admins to assign permissions or access to files to entire groups or subgroups of users within the organization. For the purposes of illustration in this tutorial I have created two organizational units, one named "_EMPLOYEES," and one named "_ADMINS."
 </p>
+
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/841f9482-478a-4191-9a80-9f53583dfde6"/>
+</p>
+
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/c27e671b-7fff-4aa3-8bf9-512ade67cec7"/>
+</p>
+
+<p>
+Next, we will create a user and make her an admin. We will create this new admin user inside the _ADMINS Organizational Unit. Right-click on _ADMINS → New → User. Then, enter the name and username for that new user, and pick a Password on the next step.
+</p>
+
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/dcc393bc-b112-49fb-8394-426d836c59ac"/>
+</p>
+
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/2e513842-f443-4528-99b1-b36a1651a69c"/> 
+</p>
+
+<p>
+Now, even though I have created Jane Doe inside the _ADMINS folder, she does not have any permissions or access assigned to her yet because I have not assigned any to the folder itself. So, now, inside the _ADMINS folder, right-click on Jane Doe's name → Properties → Member Of tab → Add... Then type "Domain Admins", then Check Name, and Add.
+</p>
+
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/92f397d1-1302-41d2-be7b-5955d1f94d42)"/> 
+</p><br />
+
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/a3308d33-8cca-4e4d-8095-2cad715f2ffd"/> 
+</p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+
+
 <br />
 
 <p>
