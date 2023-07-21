@@ -31,8 +31,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Set up a Windows Server and a Windows 10 Virtual Machine in Azure
 - Change inboud rules for the Windows Server Machine
-- Install Direct Directory
-- Step 4
+- Install Active Directory
+- Set up Active Directory
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -137,26 +137,45 @@ On Server Roles, check Active Directory Domain Services, and on the next window 
 </p>
 
 <p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Go back to Server Manager and on the top right corner, click on the Warning Sign, and click on Promote this Server to a Domain Controller.
 </p>
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/b49378a3-37a4-4975-94f1-120b6a6bb623"/>
+</p>
+
+<p>
+On Deployment Configuration, check Add a New Forest, and enter your domain name. I chose a random name for this tutorial: mydomain.com.
+</p>
+
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/403331aa-43c8-4dd5-bfbf-db0638c9da5c"/>
+</p>
+
+<p>
+On the next step, select a password for your domain.
+</p>
+
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/112e6739-3732-453c-aafd-8700b0469589"/>
+</p>
+
+<p>
+After the setup has been completed, your Virtual Machine will automatically log out. 
+</p>
+
+
+<p>
+- Step 4:
+</p>
+
+<p>
+In this step we will create a couple of Organizational Units inside our Active Directory, and will create an Admin user to be able to manage our new system efficiently.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+First, we'll type Active Directory Users and Computers in the Start Menu of our Domain Controller VM. There, right-click on the domain name, in my case it's mydomain.com, then New
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
