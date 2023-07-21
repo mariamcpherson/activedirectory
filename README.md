@@ -33,6 +33,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Change inboud rules for the Windows Server Machine
 - Install Active Directory
 - Set up Active Directory
+- Connect Windows 10 VM to Domain Controller
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -207,17 +208,24 @@ Now, even though I have created Jane Doe inside the _ADMINS folder, she does not
 
 <p>
 <img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/92f397d1-1302-41d2-be7b-5955d1f94d42)"/> 
-</p><br />
+</p>
 
 <p>
 <img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/a3308d33-8cca-4e4d-8095-2cad715f2ffd"/> 
+</p><br />
+
+
+  
+<p>
+- Step 5:
+</p>
+
+<p>
+This next step involves setting the Client Window's 10 VM DNS settings to the Domain Controller's IP Address. Right now, the Client is connected to the Virtual Net's DNS server, but in order for us to use our Domain Controller in this Client VM, we need to set the Domain Controller as basically the DNS server for the Client.
 </p>
 <p>
-<p>
-<p>
-<p>
-<p>
-<p>
+The first step involved is to go to the Azure portal and copy the Private IP Address of the VM that is hosting our Active Directory. 
+
 <p>
 
 
