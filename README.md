@@ -46,7 +46,7 @@ We will be using virtual machines in Azure in order to carry out this project. W
 </p>
 
 <p>
-The first virtual machine will be a Windows Server 2022, which we will use as our Domain Controller. When selecting the Size, we need at least 2 CPUs to be able to deploy this system efficiently. 
+The first virtual machine will be a Windows Server 2022, which we will use to install Active Directory and eventually we will designate it as a Domain Controller for the Windows VM (Client). When selecting the Size, we need at least 2 CPUs to be able to deploy this system efficiently. 
 </p>
 <p>
 <img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/8c38ee19-3041-4615-b55a-671227006bde"/>
@@ -77,7 +77,7 @@ Now, click on ipconfig1, and change it to static.
 </p>
 
 <p>
-In order to connect our Client to our Domain Controller, we need to change our inbound rules for the Domain Controller's Firewall, to allow icmp traffic from the Client.
+In order to ensure connectivity between both virtual machines, we need to change our inbound rules for the Server VM to allow inbound icmp.
 </p>
 
 <p>
@@ -85,7 +85,7 @@ In order to connect our Client to our Domain Controller, we need to change our i
 </p>
 
 <p>
-We have created the Virtual Machine that will be our Domain Controller. No we will create a Windows 10 VM that we will use as our Client accessing that Domain Controller. Make sure that it is within the same Virtual Network as the Server machine. 
+We have created the Virtual Machine that will be our Domain Controller. Now we will create a Windows 10 VM that we will use as our Client accessing that Domain Controller. Make sure that it is within the same Virtual Network as the Server machine. 
 </p>
 
 <p>
@@ -176,7 +176,7 @@ In this step we will create a couple of Organizational Units inside our Active D
 <br />
 
 <p>
-First, we'll type Active Directory Users and Computers in the Start Menu of our Domain Controller VM. There, right-click on the domain name, in my case it's mydomain.com, then New → Organizational Unit. 
+First, we'll type Active Directory Users and Computers in the Start Menu of our Server VM. There, right-click on the domain name, in my case it's mydomain.com, then New → Organizational Unit. 
 </p>
 <p>
 This is a way to create categories or groups of users within the organization for which an Active Directory has been created. This allows admins to assign permissions or access to files to entire groups or subgroups of users within the organization. For the purposes of illustration in this tutorial I have created two organizational units, one named "_EMPLOYEES," and one named "_ADMINS."
@@ -221,7 +221,7 @@ Now, even though I have created Jane Doe inside the _ADMINS folder, she does not
 </p>
 
 <p>
-This next step involves setting the Client Window's 10 VM DNS settings to the Domain Controller's IP Address. Right now, the Client is connected to the Virtual Net's DNS server, but in order for us to use our Domain Controller in this Client VM, we need to set the Domain Controller as basically the DNS server for the Client.
+This next step involves setting the Client Window's 10 VM DNS settings to the Server's IP Address, in order to make the VM with the Active Directory installed the Domain Controller for our Client VM. Right now, the Client is connected to the Virtual Net's DNS server, but in order for us to use our Domain Controller in this Client VM, we need to set the Domain Controller as basically the DNS server for the Client.
 </p>
 <p>
 The first step involved is to go to the Azure portal and copy the Private IP Address of the VM that is hosting our Active Directory. 
