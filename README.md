@@ -29,12 +29,65 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
+- Set up a Windows Server and a Windows 10 Virtual Machine in Azure
 - Step 2
 - Step 3
 - Step 4
 
 <h2>Deployment and Configuration Steps</h2>
+
+<p>
+- Step 1:
+</p>
+
+<p>
+We will be using virtual machines in Azure in order to carry out this project. We need to create two virtual machines within the same Resource Group and Virtual Network.
+</p>
+
+<p>
+The first virtual machine will be a Windows Server 2022, which we will use as our Domain Controller. When selecting the Size, we need at least 2 CPUs to be able to deploy this system efficiently. 
+</p>
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/8c38ee19-3041-4615-b55a-671227006bde"/>
+</p>
+
+<p>
+Now, we will change the Private IP Address of this VM to Static. For this, click on the VM's name, select IP Configurations
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
