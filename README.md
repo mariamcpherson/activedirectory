@@ -221,7 +221,7 @@ Now, even though I have created Jane Doe inside the _ADMINS folder, she does not
 </p>
 
 <p>
-This next step involves setting the Client Window's 10 VM DNS settings to the Server's IP Address, in order to make the VM with the Active Directory installed the Domain Controller for our Client VM. Right now, the Client is connected to the Virtual Net's DNS server, but in order for us to use our Domain Controller in this Client VM, we need to set the Domain Controller as basically the DNS server for the Client.
+This next step involves setting up our Server VM as the Domain Controller for our Client VM (Windows 10 VM). In order to achieve this, we need to set the Client Window's 10 VM DNS settings to the Server's IP Address. Right now, the Client is connected to the Virtual Net's DNS server, but after this step, the Client's DNS server will be our other Virtual Machine with the Active Directory installed.
 </p>
 <p>
 The first step involved is to go to the Azure portal and copy the Private IP Address of the VM that is hosting our Active Directory. 
