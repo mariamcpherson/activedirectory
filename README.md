@@ -52,12 +52,30 @@ The first virtual machine will be a Windows Server 2022, which we will use as ou
 </p>
 
 <p>
-Now, we will change the Private IP Address of this VM to Static. For this, click on the VM's name, select IP Configurations
+Now, we will change the Private IP Address of this VM to Static. For this, click on the VM's name, on the left Menu click on Networking, then on the right, click on the Network Interface Value. 
+</p>
+
 <p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/bf46f175-6df3-4968-a9f1-2423072d6008"/>
+</p>
+
 <p>
+Click on IP Configurations, and you can see that the IP Address is dynamic.
+</p>
+
 <p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/a94b8c9f-2bff-4803-86b0-0a6b623cccaa"/>
+</p>
+
 <p>
+Now, click on ipconfig1, and change it to static.
+</p>
+
 <p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/df86f66e-9eba-4c4f-af54-537673e29e3b"/>
+</p>
+
+
 <p>
 <p>
 <p>
