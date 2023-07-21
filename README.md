@@ -33,7 +33,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Change inboud rules for the Windows Server Machine
 - Install Active Directory
 - Set up Active Directory
-- Connect Windows 10 VM to Domain Controller
+- Set up Server VM as Domain Controller
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -214,7 +214,9 @@ Now, even though I have created Jane Doe inside the _ADMINS folder, she does not
 <img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/a3308d33-8cca-4e4d-8095-2cad715f2ffd"/> 
 </p><br />
 
-
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/a3308d33-8cca-4e4d-8095-2cad715f2ffd"/> 
+</p>
   
 <p>
 - Step 5:
@@ -224,16 +226,49 @@ Now, even though I have created Jane Doe inside the _ADMINS folder, she does not
 This next step involves setting up our Server VM as the Domain Controller for our Client VM (Windows 10 VM). In order to achieve this, we need to set the Client Window's 10 VM DNS settings to the Server's IP Address. Right now, the Client is connected to the Virtual Net's DNS server, but after this step, the Client's DNS server will be our other Virtual Machine with the Active Directory installed.
 </p>
 <p>
-The first step involved is to go to the Azure portal and copy the Private IP Address of the VM that is hosting our Active Directory. 
+The first step involved is to go to the Azure portal and copy the Private IP Address of the VM that is hosting our Active Directory. Go to Networking, then copy the NIC Private IP address.
+</p>
 
 <p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/4eb7b19a-176b-487a-9b14-9b44f0de0265"/> 
+</p>
+
+<p>
+Next, we will click on the Client VM on Azure, go to Networking, then click on the Network Interface value.
+</p>
+
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/4c81b891-f09f-423f-9373-23b8176e78b3"/> 
+</p>
+
+<p>
+On the right menu, click on DNS Servers, then Custome, and enter the Server VM's Private IP Address. *Make sure that there are no spaces before the first number of the IP Address. Afterwards, restart the Client VM from Azure.
+</p>
+
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/81a83630-4fc7-43f0-bc3d-dc36a12593d2"/>
+</p>
+
+<p>
+The last step to join our Client VM to be part of the Domain of our newly configured Domain Controller. For this part, we need to connect remotely to our Client VM, then Control Panel → Settings → System → About → Rename this PC (Advanced). Then enter the domain name you chose for your Domain Controller earlier in the setup. 
+</p>
+
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/6cff592c-9019-44b0-a02c-abb5f569baf8)"/> 
+</p>
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/e46698ac-595c-4c0a-99a6-fdfabb2db101)"/> 
+</p>
+
+<p>
+RESTART YOUR VIRTUAL MACHINE
+</p>
+
 
 
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
