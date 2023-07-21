@@ -30,7 +30,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Set up a Windows Server and a Windows 10 Virtual Machine in Azure
-- Step 2
+- Change inboud rules for the Windows Server Machine
 - Step 3
 - Step 4
 
@@ -75,17 +75,35 @@ Now, click on ipconfig1, and change it to static.
 <img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/df86f66e-9eba-4c4f-af54-537673e29e3b"/>
 </p>
 
+<p>
+In order to connect our Client to our Domain Controller, we need to change our inbound rules for the Domain Controller's Firewall, to allow icmp traffic from the Client.
+</p>
 
 <p>
+- Step 2:
+</p>
+
 <p>
+We have created the Virtual Machine that will be our Domain Controller. No we will create a Windows 10 VM that we will use as our Client accessing that Domain Controller. Make sure that it is within the same Virtual Network as the Server machine. 
+</p>
+
 <p>
+For this step, we need to connect to our Server VM. Start Menu → wf.smc for the Firewall settings.
+</p>
+
 <p>
+Inboud Rules, sort by Protocol, and enable rules:
+</p>
+
 <p>
+Core Networking Diagnosis
+</p>
+
 <p>
-<p>
-<p>
-<p>
-<p>
+ICMP Echo Request
+</p>
+
+
 <p>
 <p>
 <p>
