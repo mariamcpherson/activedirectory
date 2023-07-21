@@ -92,11 +92,15 @@ For this step, we need to connect to our Server VM. Start Menu → wf.smc for th
 </p>
 
 <p>
-Inboud Rules, sort by Protocol, and enable rules:
+Inboud Rules, sort by Protocol, and enable rules: Core Networking Diagnosis-ICMP Echo Request (there are 2).
 </p>
 
+
 <p>
-Core Networking Diagnosis
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/34276f19-8b56-47ef-bd15-1665a30155c0"/>
+</p>
+
+
 </p>
 
 <p>
