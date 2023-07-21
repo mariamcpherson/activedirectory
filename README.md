@@ -31,7 +31,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Set up a Windows Server and a Windows 10 Virtual Machine in Azure
 - Change inboud rules for the Windows Server Machine
-- Step 3
+- Install Direct Directory
 - Step 4
 
 <h2>Deployment and Configuration Steps</h2>
@@ -100,24 +100,42 @@ Inboud Rules, sort by Protocol, and enable rules: Core Networking Diagnosis-ICMP
 <img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/34276f19-8b56-47ef-bd15-1665a30155c0"/>
 </p>
 
-
+<p>
+- Step 3:
 </p>
 
 <p>
-ICMP Echo Request
+In this step we will install Direct Directory in our Windows Server Virtual Machine.
+</p>
+<p>
+The first step is to go to Server Manager and select Add Roles and Features.
+</p>
+
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/70a2a576-645f-4d3c-aa73-340291efaad0"/>
+</p>
+
+<p>
+In the installation wizard, click Next, for Installation Type, select Role-Based or Feature-Based Installation.
+</p>
+
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/abdf9f70-b1de-44e5-81f2-8e5be7b48ee0)"/>
+</p>
+
+<p>
+On Server Roles, check Active Directory Domain Services, and on the next window click on Add Features.
+</p
+
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/eaa51de2-f520-464b-900e-8965c9f1f8a8)"/>
 </p>
 
 
 <p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/1baa96e1-b474-4b8d-b427-291a54f9a8ef"/>
+</p>
+
 <p>
 <p>
 <p>
