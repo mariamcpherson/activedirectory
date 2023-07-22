@@ -35,6 +35,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Set up Active Directory
 - Set up Server VM as Domain Controller
 - Set up Remote Desktop access for all non-admin users
+- Add Users 
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -295,6 +296,88 @@ Control Panel → System → Remote Desktop → Select Users that can remotely a
 <p>
 Now, every user inside the Domain Users folder will have access to the Client VM.
 </p>
+
+
+<p>
+- Step 7:
+</p>
+
+<p>
+We have set up the Active Directory, configured the machine it's running on as a Domain Controller for our other machine, then allowed access to all users in the Active Directory to our Windows 10 machine.
+</p>
+
+<p>
+Now, we are going to need some users in our Active Directory to simulate an organization with a number of users who can all access the Windows 10 machine with their credentials.
+</p>
+
+<p>
+For the purposes of this tutorial, I will use a premade script in Powershell that will generate 10,000 random users which will be added to the Active Directory in the _EMPLOYEES folder, in alphabetical order. The names of these users are not real names, but a random combination of letters.
+</p>
+
+<p>
+Below is the link to the premade script. Credit to Josh Madakor of Course Careers for creating this script for his students. If you haven't checked out all his course offerings, I recommend you check out https://coursecareers.com/ for practical, hands-on training on different IT and tech fields.
+</p>
+<p>
+https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1
+</p>
+
+
+<p>
+In the Domain Controller VM, open Powershell IE (right-click to run as an administrator).
+</p>
+<p>
+I will create a New File and paste the premade script that I have, then Run it. The 10,000 users will start to get added into the _EMPLOYEES folder.
+</p>
+
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/b6bd897f-b284-4a7a-9e14-1ccfd5ba469e)"/> 
+</p>
+
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+
+
 <br />
 
 
