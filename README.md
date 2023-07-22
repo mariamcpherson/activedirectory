@@ -214,10 +214,6 @@ Now, even though I have created Jane Doe inside the _ADMINS folder, she does not
 <p>
 <img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/a3308d33-8cca-4e4d-8095-2cad715f2ffd"/> 
 </p><br />
-
-<p>
-<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/a3308d33-8cca-4e4d-8095-2cad715f2ffd"/> 
-</p>
   
 <p>
 - Step 5:
