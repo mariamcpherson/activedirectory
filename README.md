@@ -334,10 +334,21 @@ I will create a New File and paste the premade script that I have, then Run it. 
 </p>
 
 <p>
+When we go to the Active Directory folder _EMPLOYEES, we can see it has been populated with all those random users.
+</p>
+
 <p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/b47a642c-2700-4c7b-8767-e0b5dd3970ed"/> 
+</p>
+
 <p>
+If we click on any of the users, then look at their Properties, and the Member Of tab, we will see they are indeed part of Domain Users, and therefore they should have access to the Windows 10 machine remotely with their username and the password preset in the script, which is Password1.
+</p>
+
 <p>
-<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/9a26de64-d7af-4757-ab4f-8bec83824a9c"/> 
+</p>
+
 <p>
 <p>
 <p>
