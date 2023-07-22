@@ -311,7 +311,7 @@ Now, we are going to need some users in our Active Directory to simulate an orga
 </p>
 
 <p>
-For the purposes of this tutorial, I will use a premade script in Powershell that will generate 10,000 random users which will be added to the Active Directory in the _EMPLOYEES folder, in alphabetical order. The names of these users are not real names, but a random combination of letters.
+For the purposes of this tutorial, I will use a premade script in Powershell that will generate 10,000 random users which will be added to the Active Directory in the _EMPLOYEES folder. The names of these users are not real names, but a random combination of letters.
 </p>
 
 <p>
@@ -350,43 +350,29 @@ If we click on any of the users, then look at their Properties, and the Member O
 </p>
 
 <p>
+Now, in order to test that we've completed each step properly and that everything is working the way it should, I'll pick one of the users I have created at random and use their credentials to log into our Client Windows VM.
+</p>
+
 <p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/b31382e9-3de3-4233-84a6-51bb2cb0b10a)"/> 
+</p>
+
 <p>
+username: bewa.mudo
+</p>
 <p>
+password: Password1
+</p>
+
 <p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/55c272a5-41c5-443e-8bf9-d9965343b3c2"/> 
+</p>
+
 <p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
+The login was successful, and now we have accessed our VM remotely using our user credentials. If you are not able to log in, go back and check all the steps again to see if you missed something. 
+</p>
+
+
 
 
 <br />
