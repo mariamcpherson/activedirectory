@@ -34,6 +34,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Install Active Directory
 - Set up Active Directory
 - Set up Server VM as Domain Controller
+- Set up Remote Desktop access for all non-admin users
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -263,6 +264,42 @@ The last step to join our Client VM to be part of the Domain of our newly config
 <p>
 RESTART YOUR VIRTUAL MACHINE
 </p>
+
+<p>
+- Step 6:
+</p>
+<p>
+After we reboot our Client VM, we will log back in, but this time with our admin credentials. In my case, I created the admin user jane.doe, so I will use her credentials.
+</p>
+
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/375d6f84-832d-46ff-82d8-00eea6aa23f7"/> 
+</p>
+
+<p>
+Because we want all users that are not admins to be able to access this computer using their credentials, we will allow access to all Domain users:
+</p>
+<p>
+Control Panel → System → Remote Desktop → Select Users that can remotely access this PC → Add → type in "Domain Users" → Check Name → OK
+
+  
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/8480f762-c7e0-485a-95f9-259bbff27618"/> 
+</p>
+
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/1eaa989f-694e-43ab-a2d6-c4bb147f6834"/> 
+</p>
+
+<p>
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/26e4069c-3d53-447a-b817-7aafd5f1ac68)"/> 
+</p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
 
 
 
