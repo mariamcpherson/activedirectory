@@ -251,14 +251,15 @@ On the right menu, click on DNS Servers, then Custome, and enter the Server VM's
 </p>
 
 <p>
-The last step to join our Client VM to be part of the Domain of our newly configured Domain Controller. For this part, we need to connect remotely to our Client VM, then Control Panel → Settings → System → About → Rename this PC (Advanced). Then enter the domain name you chose for your Domain Controller earlier in the setup. 
+The last step to join our Client VM to be part of the Domain of our newly configured Domain Controller. For this part, we need to connect remotely to our Client VM, then Control Panel → Settings → System → About → Rename this PC (Advanced) → Change... Then enter the domain name you chose for your Domain Controller earlier in the setup. 
 </p>
 
 <p>
 <img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/6cff592c-9019-44b0-a02c-abb5f569baf8)"/> 
 </p>
+
 <p>
-<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/e46698ac-595c-4c0a-99a6-fdfabb2db101)"/> 
+<img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/442c04e6-49b5-4fa8-9c8b-7d094881117c"/> 
 </p>
 
 <p>
