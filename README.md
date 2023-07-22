@@ -291,7 +291,9 @@ Control Panel → System → Remote Desktop → Select Users that can remotely a
 <p>
 <img src="https://github.com/mariamcpherson/activedirectory/assets/139581822/26e4069c-3d53-447a-b817-7aafd5f1ac68)"/> 
 </p>
+
 <p>
+Now, every user inside the Domain Users folder will have access to the Client VM.
 <p>
 <p>
 <p>
